@@ -365,7 +365,7 @@
         </div>
       </section>
     </main>
-    <!--Подвал-->
+    <!--Footer-->
     <footer class="page-footer">
       <div class="container">
         <div class="logo-adress-block">
@@ -419,11 +419,48 @@
             </li>
           </ul>
         </div>
+        <div class="submit-block">
+          <div class="submit-block-title">
+            <h3 class="join-us-title">Подпишитесь на рассылку</h3>
+          </div>
+          <form class="submit-form">
+            <input type="email" name="email" placeholder="E-mail" class="submit-form-input" />
+            <button type="submit" class="footer-submit-btn">
+              Подписаться<svg class="footer-submit-btn-icon" style="width: 24px; height: 24px">
+                <use href="./images/symbol-defs.svg#icon-paperplane"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- ==========Modal================= -->
     <div class="backdrop is-hidden" data-modal>
       <div class="backdrop-content">
+        <b class="backdrop-title">Оставьте свои данные, мы вам перезвоним</b>
+        <div class="modal-form">
+          <label for="user-name" class="modal-form-label">Имя</label>
+          <input type="text" name="name" id="user-name" class="modal-form-input" />
+          <label for="user-phone-number" class="modal-form-label">Телефон</label>
+          <input type="tel" name="tel" id="user-phone-number" class="modal-form-input" />
+          <label for="user-email" class="modal-form-label">Почта</label>
+          <input type="email" name="email" id="user-email" class="modal-form-input" />
+          <label for="user-comment" class="modal-form-label">Комментарий</label>
+          <textarea
+            name="commentary"
+            id="user-comment"
+            rows="6"
+            class="modal-form-txtarea"
+          ></textarea>
+          <div class="licence-block">
+            <input type="checkbox" name="user-agreement" class="modal-form-check-box" />
+            <label for=""
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="" class="license-link">Условия договора</a>
+            </label>
+          </div>
+          <button type="submit" class="modal-submit-btn">Отправить</button>
+        </div>
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="close-icon">
             <use href="./images/symbol-defs.svg#icon-close-icon"></use>
