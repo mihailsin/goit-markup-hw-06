@@ -439,22 +439,69 @@
       <div class="backdrop-content">
         <b class="backdrop-title">Оставьте свои данные, мы вам перезвоним</b>
         <div class="modal-form">
-          <label for="user-name" class="modal-form-label">Имя</label>
-          <input type="text" name="name" id="user-name" class="modal-form-input" />
-          <label for="user-phone-number" class="modal-form-label">Телефон</label>
-          <input type="tel" name="tel" id="user-phone-number" class="modal-form-input" />
-          <label for="user-email" class="modal-form-label">Почта</label>
-          <input type="email" name="email" id="user-email" class="modal-form-input" />
-          <label for="user-comment" class="modal-form-label">Комментарий</label>
-          <textarea
-            name="commentary"
-            id="user-comment"
-            rows="6"
-            class="modal-form-txtarea"
-          ></textarea>
+          <div class="field-wrapper">
+            <label for="user-name" class="modal-form-label"
+              >Имя
+              <svg style="width: 18px; height: 18px" class="input-icon">
+                <use href="./images/symbol-defs.svg#icon-name-input"></use></svg
+            ></label>
+            <input
+              type="text"
+              name="name"
+              id="user-name"
+              placeholder=" "
+              class="modal-form-input"
+            />
+          </div>
+
+          <div class="field-wrapper">
+            <label for="user-phone-number" class="modal-form-label"
+              >Телефон
+              <svg style="width: 18px; height: 18px" class="input-icon">
+                <use href="./images/symbol-defs.svg#icon-email-input"></use></svg
+            ></label>
+            <input
+              type="tel"
+              name="tel"
+              id="user-phone-number"
+              placeholder=" "
+              class="modal-form-input"
+            />
+          </div>
+
+          <div class="field-wrapper">
+            <label for="user-email" class="modal-form-label"
+              >Почта
+              <svg style="width: 18px; height: 18px" class="input-icon">
+                <use href="./images/symbol-defs.svg#icon-phone-input"></use></svg
+            ></label>
+            <input
+              type="email"
+              name="email"
+              id="user-email"
+              placeholder=" "
+              class="modal-form-input"
+            />
+          </div>
+          <div class="field-wrapper">
+            <label for="user-comment" class="modal-form-label">Комментарий</label>
+            <textarea
+              name="commentary"
+              id="user-comment"
+              rows="6"
+              placeholder="Введите текст"
+              class="modal-form-txtarea"
+            ></textarea>
+          </div>
           <div class="licence-block">
-            <input type="checkbox" name="user-agreement" class="modal-form-check-box" />
-            <label for=""
+            <label for="agreement" class="custom-chkbx-label"
+              ><input
+                type="checkbox"
+                name="user-agreement"
+                id="agreement"
+                class="modal-form-check-box visually-hidden"
+              /><svg class="custom-chkbx-icon" style="width: 16px; height: 15px">
+                <use href="./images/symbol-defs.svg#icon-check"></use></svg
               >Соглашаюсь с рассылкой и принимаю
               <a href="" class="license-link">Условия договора</a>
             </label>
@@ -462,7 +509,7 @@
           <button type="submit" class="modal-submit-btn">Отправить</button>
         </div>
         <button type="button" class="modal-close-btn" data-modal-close>
-          <svg class="close-icon">
+          <svg class="close-icon" style="width: 18px; height: 18px">
             <use href="./images/symbol-defs.svg#icon-close-icon"></use>
           </svg>
         </button>
