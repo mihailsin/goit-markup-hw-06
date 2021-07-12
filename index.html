@@ -438,42 +438,42 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="backdrop-content">
         <b class="backdrop-title">Оставьте свои данные, мы вам перезвоним</b>
-        <div class="modal-form">
+        <form name="modal-feedback-form" class="modal form">
           <div class="field-wrapper">
-            <label for="user-name" class="modal-form-label"
+            <label for="name" class="modal-form-label"
               >Имя
               <svg style="width: 18px; height: 18px" class="input-icon">
                 <use href="./images/symbol-defs.svg#icon-name-input"></use></svg
             ></label>
             <input
               type="text"
-              name="name"
-              id="user-name"
+              name="user-name"
+              id="name"
               placeholder=" "
+              required
               class="modal-form-input"
             />
           </div>
-
           <div class="field-wrapper">
             <label for="user-phone-number" class="modal-form-label"
               >Телефон
               <svg style="width: 18px; height: 18px" class="input-icon">
-                <use href="./images/symbol-defs.svg#icon-email-input"></use></svg
+                <use href="./images/symbol-defs.svg#icon-phone-input"></use></svg
             ></label>
             <input
               type="tel"
               name="tel"
               id="user-phone-number"
               placeholder=" "
+              required
               class="modal-form-input"
             />
           </div>
-
           <div class="field-wrapper">
             <label for="user-email" class="modal-form-label"
               >Почта
               <svg style="width: 18px; height: 18px" class="input-icon">
-                <use href="./images/symbol-defs.svg#icon-phone-input"></use></svg
+                <use href="./images/symbol-defs.svg#icon-email-input"></use></svg
             ></label>
             <input
               type="email"
@@ -488,7 +488,6 @@
             <textarea
               name="commentary"
               id="user-comment"
-              rows="6"
               placeholder="Введите текст"
               class="modal-form-txtarea"
             ></textarea>
@@ -499,6 +498,7 @@
                 type="checkbox"
                 name="user-agreement"
                 id="agreement"
+                value="i-agree"
                 class="modal-form-check-box visually-hidden"
               /><svg class="custom-chkbx-icon" style="width: 16px; height: 15px">
                 <use href="./images/symbol-defs.svg#icon-check"></use></svg
@@ -507,7 +507,7 @@
             </label>
           </div>
           <button type="submit" class="modal-submit-btn">Отправить</button>
-        </div>
+        </form>
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="close-icon" style="width: 18px; height: 18px">
             <use href="./images/symbol-defs.svg#icon-close-icon"></use>
