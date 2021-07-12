@@ -9,7 +9,7 @@
   --whitetext-color: #ffffff;
   --footlogo-span-color: rgba(255, 255, 255, 1);
   --foot-contacts-color: rgba(255, 255, 255, 0.6);
-  --modal-form-txt-color: rgba(117, 117, 117, 0.5);
+  --placeholder-txt-color: rgba(117, 117, 117, 0.5);
   /* svg-fills & strokes */
   --primary-icon-fill: #afb1b8;
   --footer-icon-bcg-color: rgba(255, 255, 255, 0.1);
@@ -843,6 +843,12 @@ img {
   cursor: pointer;
 
   transition: border 250ms var(--transform-timing-function);
+}
+.modal-form-txtarea::placeholder {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: var(--placeholder-txt-color);
 }
 .licence-block {
   margin-bottom: 30px;
