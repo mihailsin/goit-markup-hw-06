@@ -242,7 +242,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.modal-open-btn {
+.modal-open-button {
   display: inline-block;
   min-width: 200px;
   height: 50px;
@@ -265,8 +265,8 @@ img {
 
   transition: background-color 250ms var(--transform-timing-function);
 }
-.modal-open-btn:hover,
-.modal-open-btn:focus {
+.modal-open-button:hover,
+.modal-open-button:focus {
   background-color: var(--modal-btn-hover-color);
 }
 /* Advantages */
@@ -569,7 +569,7 @@ img {
   background-color: var(--footer-bckg-color);
   color: var(--foot-contacts-color);
 }
-.footer-submit-btn {
+.footer-submit-button {
   display: inline-flex;
   width: 200px;
   height: 50px;
@@ -593,11 +593,11 @@ img {
 
   transition: background-color 250ms var(--transform-timing-function);
 }
-.footer-submit-btn:hover,
-.footer-submit-btn:focus {
+.footer-submit-button:hover,
+.footer-submit-button:focus {
   background-color: var(--modal-btn-hover-color);
 }
-.footer-submit-btn-icon {
+.footer-submit-button-icon {
   align-self: center;
   fill: var(--whitetext-color);
   margin-left: 10px;
@@ -760,7 +760,7 @@ img {
 .backdrop.is-hidden .backdrop-content {
   transform: translate(-50%, -50%) scale(2);
 }
-.modal-close-btn {
+.modal-close-button {
   position: absolute;
   display: flex;
   align-items: center;
@@ -780,8 +780,8 @@ img {
   fill: var(--blacktext-color);
   transition: fill 250ms var(--transform-timing-function);
 }
-.modal-close-btn:hover .close-icon,
-.modal-close-btn:focus .close-icon {
+.modal-close-button:hover .close-icon,
+.modal-close-button:focus .close-icon {
   fill: var(--accent-color);
 }
 .backdrop-title {
@@ -901,7 +901,7 @@ img {
 .license-link {
   color: var(--accent-color);
 }
-.modal-submit-btn {
+.modal-submit-button {
   display: inline-block;
   align-self: center;
   width: 200px;
@@ -925,7 +925,7 @@ img {
 
   transition: background-color 250ms var(--transform-timing-function);
 }
-.modal-submit-btn:hover,
-.modal-submit-btn:focus {
+.modal-submit-button:hover,
+.modal-submit-button:focus {
   background-color: var(--modal-btn-hover-color);
 }
