@@ -128,7 +128,7 @@
                 height="294"
               />
               <div class="features-overlay">
-                <h3 class="features-overlay-txt">Десктопные приложения</h3>
+                <h3 class="features-overlay__label">Десктопные приложения</h3>
               </div>
             </li>
             <li class="item">
@@ -139,7 +139,7 @@
                 height="294"
               />
               <div class="features-overlay">
-                <h3 class="features-overlay-txt">Мобильные приложения</h3>
+                <h3 class="features-overlay__label">Мобильные приложения</h3>
               </div>
             </li>
             <li class="item">
@@ -150,7 +150,7 @@
                 height="294"
               />
               <div class="features-overlay">
-                <h3 class="features-overlay-txt">Дизайнерские решения</h3>
+                <h3 class="features-overlay__label">Дизайнерские решения</h3>
               </div>
             </li>
           </ul>
@@ -420,11 +420,11 @@
           </ul>
         </div>
         <div class="submit-block">
-          <div class="submit-block-title">
+          <div class="submit-block__title">
             <h3 class="join-us-title">Подпишитесь на рассылку</h3>
           </div>
           <form class="submit-form">
-            <input type="email" name="email" placeholder="E-mail" class="submit-form-input" />
+            <input type="email" name="email" placeholder="E-mail" class="submit-form__input" />
             <button type="submit" class="footer-submit-btn">
               Подписаться<svg class="footer-submit-btn-icon" style="width: 24px; height: 24px">
                 <use href="./images/symbol-defs.svg#icon-paperplane"></use>
@@ -440,11 +440,7 @@
         <b class="backdrop-title">Оставьте свои данные, мы вам перезвоним</b>
         <form name="modal-feedback-form" class="modal form">
           <div class="field-wrapper">
-            <label for="name" class="modal-form-label"
-              >Имя
-              <svg style="width: 18px; height: 18px" class="input-icon">
-                <use href="./images/symbol-defs.svg#icon-name-input"></use></svg
-            ></label>
+            <label for="name" class="modal-form-label">Имя</label>
             <input
               type="text"
               name="user-name"
@@ -453,13 +449,13 @@
               required
               class="modal-form-input"
             />
+            <svg style="width: 18px; height: 18px" class="input-icon">
+              <use href="./images/symbol-defs.svg#icon-name-input"></use>
+            </svg>
           </div>
           <div class="field-wrapper">
-            <label for="user-phone-number" class="modal-form-label"
-              >Телефон
-              <svg style="width: 18px; height: 18px" class="input-icon">
-                <use href="./images/symbol-defs.svg#icon-phone-input"></use></svg
-            ></label>
+            <label for="user-phone-number" class="modal-form-label">Телефон</label>
+
             <input
               type="tel"
               name="tel"
@@ -468,13 +464,12 @@
               required
               class="modal-form-input"
             />
+            <svg style="width: 18px; height: 18px" class="input-icon">
+              <use href="./images/symbol-defs.svg#icon-phone-input"></use>
+            </svg>
           </div>
           <div class="field-wrapper">
-            <label for="user-email" class="modal-form-label"
-              >Почта
-              <svg style="width: 18px; height: 18px" class="input-icon">
-                <use href="./images/symbol-defs.svg#icon-email-input"></use></svg
-            ></label>
+            <label for="user-email" class="modal-form-label">Почта</label>
             <input
               type="email"
               name="email"
@@ -482,27 +477,30 @@
               placeholder=" "
               class="modal-form-input"
             />
+            <svg style="width: 18px; height: 18px" class="input-icon">
+              <use href="./images/symbol-defs.svg#icon-email-input"></use>
+            </svg>
           </div>
-          <div class="field-wrapper">
+          <div class="field-wrapper field-wrapper--textarea">
             <label for="user-comment" class="modal-form-label">Комментарий</label>
             <textarea
               name="commentary"
               id="user-comment"
               placeholder="Введите текст"
-              class="modal-form-txtarea"
+              class="modal-form-textarea"
             ></textarea>
           </div>
           <div class="licence-block">
-            <label for="agreement" class="custom-chkbx-label"
+            <label for="agreement" class="custom-checkbox__label"
               ><input
                 type="checkbox"
                 name="user-agreement"
                 id="agreement"
                 value="i-agree"
                 class="modal-form-check-box visually-hidden"
-              /><svg class="custom-chkbx-icon" style="width: 16px; height: 15px">
+              /><svg class="custom-checkbox__icon" style="width: 16px; height: 15px">
                 <use href="./images/symbol-defs.svg#icon-check"></use></svg
-              >Соглашаюсь с рассылкой и принимаю
+              >Соглашаюсь с рассылкой и принимаю&nbsp;
               <a href="" class="license-link">Условия договора</a>
             </label>
           </div>
