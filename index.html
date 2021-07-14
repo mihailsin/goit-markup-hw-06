@@ -438,9 +438,9 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="backdrop-content">
         <b class="backdrop-title">Оставьте свои данные, мы вам перезвоним</b>
-        <form name="modal-feedback-form" class="modal form">
+        <form name="modal-feedback-form" class="modal-form">
+          <label for="name" class="modal-form-label">Имя</label>
           <div class="field-wrapper">
-            <label for="name" class="modal-form-label">Имя</label>
             <input
               type="text"
               name="user-name"
@@ -453,9 +453,9 @@
               <use href="./images/symbol-defs.svg#icon-name-input"></use>
             </svg>
           </div>
-          <div class="field-wrapper">
-            <label for="user-phone-number" class="modal-form-label">Телефон</label>
 
+          <label for="user-phone-number" class="modal-form-label">Телефон</label>
+          <div class="field-wrapper">
             <input
               type="tel"
               name="tel"
@@ -468,8 +468,9 @@
               <use href="./images/symbol-defs.svg#icon-phone-input"></use>
             </svg>
           </div>
+
+          <label for="user-email" class="modal-form-label">Почта</label>
           <div class="field-wrapper">
-            <label for="user-email" class="modal-form-label">Почта</label>
             <input
               type="email"
               name="email"
@@ -481,8 +482,9 @@
               <use href="./images/symbol-defs.svg#icon-email-input"></use>
             </svg>
           </div>
+
+          <label for="user-comment" class="modal-form-label">Комментарий</label>
           <div class="field-wrapper field-wrapper--textarea">
-            <label for="user-comment" class="modal-form-label">Комментарий</label>
             <textarea
               name="commentary"
               id="user-comment"
